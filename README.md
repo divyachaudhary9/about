@@ -1,2 +1,1 @@
-# Divya Chaudhary
-## Coming soon....
+https://divyachaudhary9.github.io/about/index.html

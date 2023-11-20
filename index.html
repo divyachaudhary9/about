@@ -1,7 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Divya Chaudhary</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Chaudhary</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+    <style>
+        /* Style the navigation bar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the website name */
+        .navbar-title {
+            font-size: 24px;
+            font-weight: bold;
+			padding-left: 20px;
+        }
+
+        /* Style the navigation links */
+        .navbar-links {
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-end;
+        }
+
+        .navbar-link {
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .navbar-link:hover {
+            background-color: #555;
+        }
+
+        /* Style the social media icons */
+        .navbar-icons {
+            display: flex;
+            margin: 10px;
+        }
+
+        .navbar-icon {
+            margin: 5px;
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Make the navigation bar responsive */
+        @media (max-width: 600px) {
+
+            .navbar {
+				padding-top: 20px;
+                flex-direction: column;
+            }
+        }
+		
+        /* Style the main content */
+        .main {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+        }
+
+        /* Style the list of research papers */
+        .main-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .main-list-item {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #333;
+        }
+
+        .main-list-item-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .main-list-item-authors {
+            font-size: 16px;
+            font-weight: normal;
+            color: #333;
+        }
+
+        .main-list-item-journal {
+            font-size: 14px;
+            font-weight: italic;
+            color: #333;
+        }
+		
+		/* Style the profile section */
+		.profile {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  margin: 20px;
+		}
+
+		/* Style the profile image */
+		.profile-img {
+		  width: 150px;
+		  height: 150px;
+		  border-radius: 50%;
+		  object-fit: cover;
+		}
+
+		/* Style the profile name */
+		.profile-name {
+		  font-size: 24px;
+		  font-weight: bold;
+		  color: #333;
+		  margin: 10px;
+		}
+
+		/* Style the profile designation */
+		.profile-designation {
+		  font-size: 18px;
+		  font-weight: normal;
+		  color: #333;
+		  margin: 10px;
+		}
+
+    </style>
 </head>
 <body>
-  <h1>Divya Chaudhary</h1>
-  <h2>Coming soon...</h2>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <!-- Website name -->
+        <span class="navbar-title">Divya Chaudhary</span>
+        <!-- Social media icons -->
+        <div class="navbar-icons">
+            <a href="#"><img src="img/linkedin.ico" alt="LinkedIn" class="navbar-icon"></a>
+			<a href="#"><img src="img/gscholar.ico" alt="Google Scholar" class="navbar-icon"></a>
+            <a href="#"><img src="img/github.png" alt="GitHub" class="navbar-icon"></a>
+        </div>
+		<!-- Navigation links -->
+        <div class="navbar-links">
+            <a href="#" class="navbar-link">Academics</a>
+            <a href="#" class="navbar-link">CV</a>
+            <a href="#" class="navbar-link">Contact</a>
+        </div>
+    </div>
+    <!-- Main content -->
+    <div class="main">
+		<!-- Profile picture section -->
+		<div class="profile">
+		  <!-- Profile image -->
+		  <img src="img/small-profile.jpg" alt="Profile picture" class="profile-img">
+		  <!-- Profile name and designation -->
+		  <p class="profile-name">Divya Chaudhary</p>
+		  <p class="profile-designation">Assistant Teaching Professor</p>
+		</div>
+
+        <!-- List of research papers -->
+        <ul class="main-list">
+            <li class="main-list-item">
+                <span class="main-list-item-title">A Novel Approach to Machine Learning</span>
+                <br>
+                <span class="main-list-item-authors">John Smith, Jane Doe, and Bob Lee</span>
+                <br>
+                <span class="main-list-item-journal">Journal of Artificial Intelligence, 2023</span>
+            </li>
+            <li class="main-list-item">
+                <span class="main-list-item-title">An Efficient Algorithm for Data Mining</span>
+                <br>
+                <span class="main-list-item-authors">John Smith and Alice Wang</span>
+                <br>
+                <span class="main-list-item-journal">Journal of Data Science, 2023</span>
+            </li>
+            <li class="main-list-item">
+                <span class="main-list-item-title">A Comparative Study of Deep Learning Frameworks</span>
+                <br>
+                <span class="main-list-item-authors">John Smith, David Chen, and Lisa Liu</span>
+                <br>
+                <span class="main-list-item-journal">Journal of Machine Learning, 2023</span>
+            </li>
+        </ul>
+    </div>
 </body>
+</html>
