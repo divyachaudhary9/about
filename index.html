@@ -1,193 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divya Chaudhary</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Divya Chaudhary</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.jpg">
-    <style>
-        /* Style the navigation bar */
-        .navbar {
-            display: flex;
-            align-items: center;
-            background-color: #333;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
+	<style>
+		/* Style the body */
+		body {
+			margin: 0px;
+		}
+		/* Style the navigation bar */
+		.navbar {
+			display: flex;
+			align-items: center;
+			background-color: #333;
+			color: white;
+			font-family: Arial, sans-serif;
+		}
 
-        /* Style the website name */
-        .navbar-title {
-            font-size: 24px;
-            font-weight: bold;
+		/* Style the website name */
+		.navbar-title {
+			font-size: 24px;
+			font-weight: bold;
 			padding-left: 20px;
-        }
+		}
 
-        /* Style the navigation links */
-        .navbar-links {
-            display: flex;
-            flex-grow: 1;
-            justify-content: flex-end;
-        }
+		/* Style the navigation links */
+		.navbar-links {
+			display: flex;
+			flex-grow: 1;
+			justify-content: flex-end;
+		}
 
-        .navbar-link {
-            margin: 10px;
-            padding: 10px;
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-        }
+		.navbar-link {
+			margin: 10px;
+			padding: 10px;
+			text-decoration: none;
+			color: white;
+			font-size: 18px;
+		}
 
-        .navbar-link:hover {
-            background-color: #555;
-        }
+		.navbar-link:hover {
+			background-color: #555;
+		}
 
-        /* Style the social media icons */
-        .navbar-icons {
-            display: flex;
-            margin: 10px;
-        }
+		/* Style the social media icons */
+		.navbar-icons {
+			display: flex;
+			margin: 10px;
+		}
 
-        .navbar-icon {
-            margin: 5px;
-            width: 30px;
-            height: 30px;
-        }
+		.navbar-icon {
+			margin: 5px;
+			width: 30px;
+			height: 30px;
+		}
 
-        /* Make the navigation bar responsive */
-        @media (max-width: 600px) {
+		/* Make the navigation bar responsive */
+		@media (max-width: 600px) {
 
-            .navbar {
+			.navbar {
 				padding-top: 20px;
-                flex-direction: column;
-            }
-        }
+				flex-direction: column;
+			}
+		}
 		
-        /* Style the main content */
-        .main {
-            margin: 20px;
-            font-family: Arial, sans-serif;
+		/* Style the main content */
+		.main {
+			margin: 20px;
+			font-family: Arial, sans-serif;
 			max-width: 1000px;
 			margin-left: auto;
 			margin-right: auto;
-        }
+		}
 
-        /* Style the list of research papers */
-        .main-list {
-            list-style-type: none;
-            padding: 0;
-        }
+		/* Style the list of research papers */
+		.main-list {
+			list-style-type: none;
+			padding: 0;
+		}
 
-        .main-list-item {
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid #333;
-        }
+		.main-list-item {
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid #333;
+		}
 
-        .main-list-item-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-        }
+		.main-list-item-title {
+			font-size: 18px;
+			font-weight: bold;
+			color: #333;
+		}
 
-        .main-list-item-authors {
-            font-size: 16px;
-            font-weight: normal;
-            color: #333;
-        }
+		.main-list-item-authors {
+			font-size: 16px;
+			font-weight: normal;
+			color: #333;
+		}
 
-        .main-list-item-journal {
-            font-size: 14px;
-            font-weight: italic;
-            color: #333;
-        }
+		.main-list-item-journal {
+			font-size: 14px;
+			font-weight: italic;
+			color: #333;
+		}
 		
 		/* Style the profile section */
 		.profile {
-		  display: flex;
-		  flex-direction: column;
-		  align-items: center;
-		  margin: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 20px;
 		}
 
 		/* Style the profile image */
 		.profile-img {
-		  width: 150px;
-		  height: 150px;
-		  border-radius: 50%;
-		  object-fit: cover;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			object-fit: cover;
 		}
 
 		/* Style the profile name */
 		.profile-name {
-		  font-size: 24px;
-		  font-weight: bold;
-		  color: #333;
-		  margin: 10px;
+			font-size: 24px;
+			font-weight: bold;
+			color: #333;
+			margin: 10px;
 		}
 
 		/* Style the profile designation */
 		.profile-designation {
-		  font-size: 18px;
-		  font-weight: normal;
-		  color: #333;
-		  margin: 10px;
+			font-size: 18px;
+			font-weight: normal;
+			color: #333;
+			margin: 10px;
 		}
 
-    </style>
+	</style>
 </head>
 <body>
-    <!-- Navigation bar -->
-    <div class="navbar">
-        <!-- Website name -->
-        <span class="navbar-title">Divya Chaudhary</span>
-        <!-- Social media icons -->
-        <div class="navbar-icons">
-            <a href="#"><img src="img/linkedin.ico" alt="LinkedIn" class="navbar-icon"></a>
-			<a href="#"><img src="img/gscholar.ico" alt="Google Scholar" class="navbar-icon"></a>
-            <a href="#"><img src="img/github.png" alt="GitHub" class="navbar-icon"></a>
-        </div>
+	<!-- Navigation bar -->
+	<div class="navbar">
+		<!-- Website name -->
+		<span class="navbar-title">Divya Chaudhary</span>
+		<!-- Social media icons -->
+		<div class="navbar-icons">
+			<a href="https://www.linkedin.com/in/divya-chaudhary-divya-dabas-ph-d-15677b91/" target="_blank"><img src="img/linkedin.ico" alt="LinkedIn" class="navbar-icon"></a>
+			<a href="https://scholar.google.co.in/citations?user=s4AxRs8AAAAJ&hl=en" target="_blank"><img src="img/gscholar.ico" alt="Google Scholar" class="navbar-icon"></a>
+			<a href="https://github.com/divyachaudhary9" target="_blank"><img src="img/github.png" alt="GitHub" class="navbar-icon"></a>
+		</div>
 		<!-- Navigation links -->
-        <div class="navbar-links">
-            <a href="#" class="navbar-link">Academics</a>
-            <a href="#" class="navbar-link">CV</a>
-            <a href="#" class="navbar-link">Contact</a>
-        </div>
-    </div>
-    <!-- Main content -->
-    <div class="main">
+		<div class="navbar-links">
+			<a href="#" class="navbar-link">Academics</a>
+			<a href="#" class="navbar-link">CV</a>
+			<a href="#" class="navbar-link">Contact</a>
+		</div>
+	</div>
+	<!-- Main content -->
+	<div class="main">
 		<!-- Profile picture section -->
 		<div class="profile">
-		  <!-- Profile image -->
-		  <img src="img/small-profile.jpg" alt="Profile picture" class="profile-img">
-		  <!-- Profile name and designation -->
-		  <p class="profile-name">Divya Chaudhary</p>
-		  <p class="profile-designation">Assistant Teaching Professor</p>
+			<!-- Profile image -->
+			<img src="img/small-profile.jpg" alt="Profile picture" class="profile-img">
+			<!-- Profile name and designation -->
+			<p class="profile-name">Divya Chaudhary</p>
+			<p class="profile-designation">Assistant Teaching Professor</p>
 		</div>
 
-        <!-- List of research papers -->
-        <ul class="main-list">
-            <li class="main-list-item">
-                <span class="main-list-item-title">A Novel Approach to Machine Learning</span>
-                <br>
-                <span class="main-list-item-authors">John Smith, Jane Doe, and Bob Lee</span>
-                <br>
-                <span class="main-list-item-journal">Journal of Artificial Intelligence, 2023</span>
-            </li>
-            <li class="main-list-item">
-                <span class="main-list-item-title">An Efficient Algorithm for Data Mining</span>
-                <br>
-                <span class="main-list-item-authors">John Smith and Alice Wang</span>
-                <br>
-                <span class="main-list-item-journal">Journal of Data Science, 2023</span>
-            </li>
-            <li class="main-list-item">
-                <span class="main-list-item-title">A Comparative Study of Deep Learning Frameworks</span>
-                <br>
-                <span class="main-list-item-authors">John Smith, David Chen, and Lisa Liu</span>
-                <br>
-                <span class="main-list-item-journal">Journal of Machine Learning, 2023</span>
-            </li>
-        </ul>
-    </div>
+		<!-- List of research papers -->
+		<ul class="main-list">
+			<li class="main-list-item">
+				<span class="main-list-item-title">Cost optimized Hybrid Genetic-Gravitational Search Algorithm for load scheduling in Cloud Computing</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, B Kumar</span>
+				<br/>
+				<span class="main-list-item-journal">Applied Soft Computing 83 (105627), 1-18, 2019</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Cloudy GSA for load scheduling in cloud computing</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, B Kumar</span>
+				<br/>
+				<span class="main-list-item-journal">Applied Soft Computing 71, 861-871, 2018</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">A new load balancing technique for virtual machine cloud computing environment</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, RS Chhillar</span>
+				<br/>
+				<span class="main-list-item-journal">International Journal of Computer Applications 69 (23), 2013</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Analytical study of load scheduling algorithms in cloud computing</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, B Kumar</span>
+				<br/>
+				<span class="main-list-item-journal">2014 International Conference on Parallel, Distributed and Grid Computing, 7-12, 2014</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">An analysis of the load scheduling algorithms in the cloud computing environment: A survey</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, B Kumar</span>
+				<br/>
+				<span class="main-list-item-journal">2014 9th International Conference on Industrial and Information Systems …, 2014</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">A new balanced particle swarm optimisation for load scheduling in cloud computing</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, B Kumar</span>
+				<br/>
+				<span class="main-list-item-journal">Journal of Information & Knowledge Management 17 (01), 1850009, 2018</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Component Based Software Engineering Systems: Process and Metrices</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, RS Chhillar</span>
+				<br/>
+				<span class="main-list-item-journal">International Journal of advanced research in computer science and software …, 2013</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Component Based Software Engineering Systems: Process and Metrices</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, RS Chhillar</span>
+				<br/>
+				<span class="main-list-item-journal">International Journal of advanced research in computer science and software …, 2013</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Linear improved gravitational search algorithm for load scheduling in cloud computing environment (LIGSA-C)</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, B Kumar</span>
+				<br/>
+				<span class="main-list-item-journal">International Journal of Computer Network and Information Security 11 (4), 38, 2018</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">NPSO based cost optimization for load scheduling in cloud computing</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, B Kumar, R Khanna</span>
+				<br/>
+				<span class="main-list-item-journal">Security in Computing and Communications: 5th International Symposium, SSCC …, 2017</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Data Mining: Techniques and Algorithms</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary</span>
+				<br/>
+				<span class="main-list-item-journal">International Journal of Advanced Research in Computer Science and Software …, 2013</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Diversity and progress controlled gravitational search algorithm for balancing load in cloud</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, B Kumar, S Garg</span>
+				<br/>
+				<span class="main-list-item-journal">Security in Computing and Communications: 6th International Symposium, SSCC …, 2019</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Improved bee swarm optimization algorithm for load scheduling in cloud computing environment</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, B Kumar, S Sakshi, R Khanna</span>
+				<br/>
+				<span class="main-list-item-journal">Data Science and Analytics: 4th International Conference on Recent …, 2018</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Reverse host allocation approach for virtual machine cloud computing environment</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary, RS Chhillar</span>
+				<br/>
+				<span class="main-list-item-journal">International Journal of Computer Applications 72 (17), 2013</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Multimodal Analysis and Modality Fusion for Detection of Depression from Twitter Data</span>
+				<br/>
+				<span class="main-list-item-authors">N Semwal, M Suri, D Chaudhary, I Gorton, B Kumar</span>
+				<br/>
+				<span class="main-list-item-journal">Association for the Advancement of Artificial Intelligence, 1-5, 2023</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Detection of sexism on social media with multiple simple transformers</span>
+				<br/>
+				<span class="main-list-item-authors">C Jhakal, K Singal, M Suri, D Chaudhary, I Gorton, B Kumar</span>
+				<br/>
+				<span class="main-list-item-journal">Working Notes of CLEF, 2023</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">I don’t feel so good! Detecting Depressive Tendencies using Transformer-based Multimodal Frameworks</span>
+				<br/>
+				<span class="main-list-item-authors">M Suri, N Semwal, D Chaudhary, I Gorton, B Kumar</span>
+				<br/>
+				<span class="main-list-item-journal">Proceedings of the 2022 5th International Conference on Machine Learning and …, 2022</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">WADER at SemEval-2023 Task 9: A Weak-labelling framework for Data augmentation in tExt Regression Tasks</span>
+				<br/>
+				<span class="main-list-item-authors">M Suri, A Garg, D Chaudhary, I Gorton, B Kumar</span>
+				<br/>
+				<span class="main-list-item-journal">arXiv preprint arXiv:2303.02758, 2023</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Enhancing Security for a Secure Cloud Computing Environment</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary</span>
+				<br/>
+				<span class="main-list-item-journal">International Journal of Advanced Research in Computer Science and Software …, 2013</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Divya Chaudhary</span>
+				<br/>
+				<span class="main-list-item-authors">RS Chhillar</span>
+				<br/>
+				<span class="main-list-item-journal">Journal on Cloud Computing: Services and Architecture (IJCCSA) 2 (5), 2012</span>
+			</li>
+			<li class="main-list-item">
+				<span class="main-list-item-title">Performance evaluation & design of techniques for efficient load scheduling in cloud computing</span>
+				<br/>
+				<span class="main-list-item-authors">D Chaudhary</span>
+				<br/>
+				<span class="main-list-item-journal">New Delhi</span>
+			</li>		</ul>
+	</div>
 </body>
 </html>
