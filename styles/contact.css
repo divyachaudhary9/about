@@ -1,0 +1,28 @@
+.contact-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  max-width: 400px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-card h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.contact-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-card li {
+  margin-bottom: 8px;
+}

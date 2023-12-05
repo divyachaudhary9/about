@@ -1,0 +1,70 @@
+/* Style the body */
+body {
+	margin: 0px;
+}
+/* Style the navigation bar */
+.navbar {
+	display: flex;
+	align-items: center;
+	background-color: #333;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+/* Style the website name */
+.navbar-title {
+	font-size: 24px;
+	font-weight: bold;
+	padding-left: 20px;
+	text-decoration: none;
+	color: white;
+}
+
+/* Style the navigation links */
+.navbar-links {
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+
+.navbar-link {
+	margin: 10px;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+
+.navbar-link:hover {
+	background-color: #555;
+}
+
+/* Style the social media icons */
+.navbar-icons {
+	display: flex;
+	margin: 10px;
+}
+
+.navbar-icon {
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+/* Make the navigation bar responsive */
+@media (max-width: 600px) {
+
+	.navbar {
+		padding-top: 20px;
+		flex-direction: column;
+	}
+}
+
+/* Style the main content */
+.main {
+	margin: 20px;
+	font-family: Arial, sans-serif;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
